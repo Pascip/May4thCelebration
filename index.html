@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>May the 4th</title>
+  </head>
+  <body>
+    <div class="lightsaber">
+      <div id="saberblade" class="sabre"></div>
+      <div class="handle">
+        <div class="trigger" onclick="activateSaber()"></div>
+        <div class="decoration">
+          <div class="dec1"></div>
+          <div class="dec1"></div>
+          <div class="dec1"></div>
+        </div>
+        <div class="decoration2">
+          <div class="overflowDec"></div>
+        </div>
+      </div>
+    </div>
+    <div class="settings">
+      <span id="settingGreen" onclick="changeColour('green')">Green</span>
+      <span id="settingBlue" onclick="changeColour('blue')">Blue</span>
+      <span id="settingYellow" onclick="changeColour('yellow')">Yellow</span>
+      <span id="settingPurple" onclick="changeColour('purple')">Purple</span>
+      <span id="settingRed" onclick="changeColour('red')">Red</span>
+      <span id="settingWhite" onclick="changeColour('white')">White</span>
+      <span id="settingPink" onclick="changeColour('palevioletred')">Pink</span>
+      <span id="settingSound" onclick="changeSoundSetting()">Sound</span>
+    </div>
+    <audio id="audioHum">
+      <source src="assets/Hum.mp3" type="audio/mp3" />
+      Your browser does not support the audio element.
+    </audio>
+    <audio id="audioDeactivate">
+      <source src="assets/turnoff.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="audioActivate">
+      <source src="assets/SaberOn.mp3" type="audio/mp3" />
+    </audio>
+    <script src="scripts/baseScript.js"></script>
+  </body>
+</html>
